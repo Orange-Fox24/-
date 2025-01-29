@@ -11,10 +11,11 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            height: 100vh;
+            justify-content: flex-start; /* Изменено на flex-start для прокрутки */
+            height: auto; /* Изменено на auto */
             margin: 0;
-            padding: 0 10px; /* Отступы по бокам */
+            padding: 20px 10px; /* Увеличены отступы сверху и снизу */
+            overflow-y: auto; /* Добавлено для прокрутки */
         }
 
         img {
@@ -39,8 +40,8 @@
             padding: 0; 
             cursor: pointer;
             background-size: cover; 
-            height: 50px; 
-            width: 150px; 
+            height: 70px; 
+            width: 180px; 
             transition: opacity 0.3s, transform 0.3s; /* Плавный переход для эффекта наведения */
         }
 
