@@ -14,17 +14,21 @@
             justify-content: center;
             height: 100vh;
             margin: 0;
+            padding: 0 10px; /* Добавлено немного отступа по бокам */
         }
         img {
             width: 100%;
             height: auto;
-            max-height: 100vh;
+            max-height: 80vh; /* Уменьшена максимальная высота для лучшего отображения на мобильных */
             object-fit: contain;
         }
         .buttons {
-            margin-top: 1px; /* Уменьшено значение отступа между изображением и кнопками */
+            margin-top: 10px; /* Увеличен отступ между изображением и кнопками */
             display: flex;
+            flex-direction: row; /* Убедитесь, что кнопки располагаются в ряд */
             gap: 15px; /* Отступ между кнопками */
+            flex-wrap: wrap; /* Позволяет кнопкам переноситься на новую строку при необходимости */
+            justify-content: center; /* Центрирование кнопок */
         }
         button {
             background-color: transparent; /* Прозрачный фон */
@@ -33,7 +37,8 @@
             cursor: pointer;
             background-size: cover; /* Масштабирование фона */
             height: 50px; /* Высота кнопки */
-            width: 250px; /* Увеличена ширина кнопки */
+            width: 150px; /* Уменьшена ширина кнопки для мобильных */
+            transition: opacity 0.3s; /* Плавный переход для эффекта наведения */
         }
         .button1 {
             background-image: url('https://github.com/Orange-Fox24/DB-github.io/blob/main/img2.png?raw=true');
@@ -43,6 +48,19 @@
         }
         button:hover {
             opacity: 0.8; /* Эффект при наведении */
+        }
+
+        /* Медиа-запросы для адаптации под разные экраны */
+        @media (min-width: 600px) {
+            button {
+                width: 200px; /* Увеличиваем ширину кнопок на экранах больше 600px */
+            }
+        }
+
+        @media (min-width: 900px) {
+            img {
+                max-height: 90vh; /* Увеличиваем максимальную высоту изображения на больших экранах */
+            }
         }
     </style>
 </head>
