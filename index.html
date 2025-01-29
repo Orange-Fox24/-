@@ -16,25 +16,33 @@
             margin: 0;
         }
         img {
-            width: 100%; /* Занимает всю ширину */
-            height: auto; /* Высота автоматически подстраивается */
-            max-height: 100vh; /* Ограничивает высоту изображения */
-            object-fit: contain; /* Сохраняет пропорции изображения */
+            width: 100%;
+            height: auto;
+            max-height: 100vh;
+            object-fit: contain;
         }
         .buttons {
             margin-top: 20px;
+            display: flex;
+            gap: 10px; /* Отступ между кнопками */
         }
         button {
-            background-color: #444;
-            color: white;
+            background-color: transparent; /* Прозрачный фон */
             border: none;
-            padding: 10px 20px;
-            margin: 5px;
+            padding: 0; /* Убираем отступы */
             cursor: pointer;
-            border-radius: 5px;
+            width: 50px; /* Ширина кнопки */
+            height: 50px; /* Высота кнопки */
+            background-size: cover; /* Масштабирование фона */
+        }
+        .button1 {
+            background-image: url('https://github.com/Orange-Fox24/DB-github.io/blob/main/img2.png?raw=true');
+        }
+        .button2 {
+            background-image: url('https://github.com/Orange-Fox24/DB-github.io/blob/main/img3.png?raw=true');
         }
         button:hover {
-            background-color: #666;
+            opacity: 0.8; /* Эффект при наведении */
         }
     </style>
 </head>
@@ -43,8 +51,8 @@
     <img src="https://github.com/Orange-Fox24/DB-github.io/blob/main/img.png?raw=true" alt="">
 
     <div class="buttons">
-        <button onclick="alert('Кнопка 1 нажата!')">Кнопка 1</button>
-        <button onclick="alert('Кнопка 2 нажата!')">Кнопка 2</button>
+        <button class="button1" onclick="alert('Кнопка 1 нажата!')"></button>
+        <button class="button2" onclick="alert('Кнопка 2 нажата!')"></button>
     </div>
 
 </body>
