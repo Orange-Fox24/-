@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница с изображением</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        button {
+            background-color: #444;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="https://drive.google.com/uc?id=1QXbQk1BaLmBJ5W9M-sudvbeO_VoLykMa" alt="Изображение с Google Диска">
+
+    <div class="buttons">
+        <button onclick="alert('Кнопка 1 нажата!')">Кнопка 1</button>
+        <button onclick="alert('Кнопка 2 нажата!')">Кнопка 2</button>
+    </div>
+
+</body>
+</html>
