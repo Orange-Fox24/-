@@ -16,8 +16,9 @@
             margin: 0;
         }
         img {
-            max-width: 100%;
-            height: auto;
+            width: 100%; /* Изменено на width: 100% для полного заполнения */
+            height: auto; /* Сохраняет пропорции изображения */
+            max-height: 100vh; /* Ограничивает высоту изображения */
         }
         .buttons {
             margin-top: 20px;
@@ -41,8 +42,8 @@
     <img src="https://github.com/Orange-Fox24/DB-github.io/blob/main/img.png?raw=true" alt="">
 
     <div class="buttons">
-        <button onclick="alert('Кнопка 1 нажата!')">Кнопка </button>
-        <button onclick="alert('Кнопка 2 нажата!')">Кнопка </button>
+        <button onclick="alert('Кнопка 1 нажата!')">Кнопка 1</button>
+        <button onclick="alert('Кнопка 2 нажата!')">Кнопка 2</button>
     </div>
 
 </body>
