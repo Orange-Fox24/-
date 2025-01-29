@@ -14,52 +14,59 @@
             justify-content: center;
             height: 100vh;
             margin: 0;
-            padding: 0 10px; /* Добавлено немного отступа по бокам */
+            padding: 0 10px; /* Отступы по бокам */
         }
+
         img {
             width: 100%;
             height: auto;
-            max-height: 80vh; /* Уменьшена максимальная высота для лучшего отображения на мобильных */
+            max-height: 80vh; /* Максимальная высота для мобильных */
             object-fit: contain;
         }
+
         .buttons {
-            margin-top: 10px; /* Увеличен отступ между изображением и кнопками */
+            margin-top: 20px; /* Увеличен отступ между изображением и кнопками */
             display: flex;
-            flex-direction: row; /* Убедитесь, что кнопки располагаются в ряд */
-            gap: 15px; /* Отступ между кнопками */
-            flex-wrap: wrap; /* Позволяет кнопкам переноситься на новую строку при необходимости */
-            justify-content: center; /* Центрирование кнопок */
+            flex-direction: row; 
+            gap: 15px; 
+            flex-wrap: wrap; 
+            justify-content: center; 
         }
+
         button {
-            background-color: transparent; /* Прозрачный фон */
+            background-color: transparent; 
             border: none;
-            padding: 0; /* Убираем отступы */
+            padding: 0; 
             cursor: pointer;
-            background-size: cover; /* Масштабирование фона */
-            height: 50px; /* Высота кнопки */
-            width: 150px; /* Уменьшена ширина кнопки для мобильных */
-            transition: opacity 0.3s; /* Плавный переход для эффекта наведения */
+            background-size: cover; 
+            height: 50px; 
+            width: 150px; 
+            transition: opacity 0.3s, transform 0.3s; /* Плавный переход для эффекта наведения */
         }
+
         .button1 {
             background-image: url('https://github.com/Orange-Fox24/DB-github.io/blob/main/img2.png?raw=true');
         }
+
         .button2 {
             background-image: url('https://github.com/Orange-Fox24/DB-github.io/blob/main/img3.png?raw=true');
         }
+
         button:hover {
-            opacity: 0.8; /* Эффект при наведении */
+            opacity: 0.8; 
+            transform: scale(1.05); /* Увеличение кнопки при наведении */
         }
 
         /* Медиа-запросы для адаптации под разные экраны */
         @media (min-width: 600px) {
             button {
-                width: 200px; /* Увеличиваем ширину кнопок на экранах больше 600px */
+                width: 200px; 
             }
         }
 
         @media (min-width: 900px) {
             img {
-                max-height: 90vh; /* Увеличиваем максимальную высоту изображения на больших экранах */
+                max-height: 90vh; 
             }
         }
     </style>
